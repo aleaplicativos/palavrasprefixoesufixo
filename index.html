@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>aleaplicativos palavras INÍCIO/ FIM</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+      width: 300px;
+      padding: 5px;
+    }
+
+    button {
+      padding: 5px 10px;
+      margin-left: 10px;
+    }
+
+    #search-result {
+      margin-top: 20px;
+    }
+
+    h3 {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Busca de Palavras com letras início/ fim</h1>
+
+  <form id="search-form">
+    <input type="text" id="search-input" placeholder="Digite uma palavra">
+    <button id="prefix-button">Por Prefixo</button>
+    <button id="suffix-button">Por Sufixo</button>
+  </form>
+
+  <div id="search-result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
