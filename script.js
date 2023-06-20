@@ -21,7 +21,7 @@ suffixButton.addEventListener('click', e => {
 
 // Função para buscar palavras por prefixo
 async function searchPrefix() {
-  const input = document.getElementById('search-input').value;
+  const input = document.getElementById('search-input').value.toLowerCase();
   const apiUrl = `https://api.dicionario-aberto.net/prefix/${input}`;
 
   try {
@@ -36,7 +36,7 @@ async function searchPrefix() {
 
 // Função para buscar palavras por sufixo
 async function searchSuffix() {
-  const input = document.getElementById('search-input').value;
+  const input = document.getElementById('search-input').value.toLowerCase();
   const apiUrl = `https://api.dicionario-aberto.net/suffix/${input}`;
 
   try {
